@@ -49,4 +49,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    //依赖本地maven仓库
+    implementation 'com.jay.sharelibrary:sharelibrary:1.0.1'
+    //依赖module
+//    implementation project(path: ':sharelibrary')
 }

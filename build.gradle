@@ -5,6 +5,9 @@ buildscript {
     repositories {
         google()
         jcenter()
+        maven {
+            url 'file:///Users/Shared/repo/'
+        }
         
     }
     dependencies {
@@ -20,6 +23,9 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven {
+            url MAVEN_LOCAL_REPO_PATH
+        }
         
     }
 }

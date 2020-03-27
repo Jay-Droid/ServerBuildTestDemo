@@ -34,24 +34,22 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    //依赖本地maven仓库
-    implementation 'com.jay.baselibrary:baselibrary:1.0.0'
-    //依赖module
-//    implementation project(path: ':baselibrary')
 }
+
+
 /////////////////////////////////////发不到到本地Maven仓库/////////////////////////////////////
 apply plugin: 'maven'
 uploadArchives {
-    //dependencies path: com.jay.sharelibrary:sharelibrary:1.0.0
+    //dependencies path: com.jay.baselibrary:baselibrary:1.0.0
     repositories.mavenDeployer {
         //本地路径
-        repository(url: MAVEN_LOCAL_REPO_PATH)
+        repository(url: "file:///Users/Shared/Maven/MavenLocalRepo")
         // 唯一标识
-        pom.groupId = "com.jay.sharelibrary"
+        pom.groupId = "com.jay.baselibrary"
         // 项目名称
-        pom.artifactId = "sharelibrary"
+        pom.artifactId = "baselibrary"
         // 版本号
-        pom.version = "1.0.1"
+        pom.version = "1.0.0"
     }
 }
 /////////////////////////////////////发不到到本地Maven仓库/////////////////////////////////////

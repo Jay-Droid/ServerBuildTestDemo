@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ShareActivity">
+    tools:context=".BaseActivity">
     <TextView
-        android:id="@+id/tv_share"
-        android:text="远程依赖分享"
+        android:text="远程依赖Base"
         android:textSize="33sp"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
