@@ -36,21 +36,3 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
 
-
-/////////////////////////////////////发不到到本地Maven仓库/////////////////////////////////////
-apply plugin: 'maven'
-uploadArchives {
-    //dependencies path: com.jay.baselibrary:baselibrary:1.0.0
-    repositories.mavenDeployer {
-        //本地路径
-        repository(url: "file:///Users/Shared/Maven/MavenLocalRepo")
-        // 唯一标识
-        pom.groupId = "com.jay.baselibrary"
-        // 项目名称
-        pom.artifactId = "baselibrary"
-        // 版本号
-        pom.version = "1.0.0"
-    }
-}
-/////////////////////////////////////发不到到本地Maven仓库/////////////////////////////////////
-
