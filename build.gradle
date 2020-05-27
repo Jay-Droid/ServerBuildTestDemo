@@ -35,7 +35,7 @@ allprojects {
 }
 
 allprojects {
-    group = 'com.jay'
+    group = 'com.jay.lib'
     version = '1.0.0'
 }
 
