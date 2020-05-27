@@ -5,8 +5,10 @@ buildscript {
     repositories {
         google()
         jcenter()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
         maven {
-            url 'file:///Users/Shared/repo/'
+            url MAVEN_LOCAL_REPO_PATH
         }
         
     }
@@ -23,6 +25,8 @@ allprojects {
     repositories {
         google()
         jcenter()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
         maven {
             url MAVEN_LOCAL_REPO_PATH
         }

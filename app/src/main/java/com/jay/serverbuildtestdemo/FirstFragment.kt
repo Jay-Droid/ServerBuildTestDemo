@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.jay.sharelibrary.ShareActivity
+import com.jaydroid.login.user.activity.LoginActivity
 import kotlinx.android.synthetic.main.fragment_first.*
 
 /**
@@ -28,7 +29,9 @@ class FirstFragment : Fragment() {
 
         view.findViewById<Button>(R.id.button_first).setOnClickListener {
             //            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
-            startActivity(Intent(activity, ShareActivity::class.java))
+//            startActivity(Intent(activity, ShareActivity::class.java))
+            startActivity(Intent(activity, LoginActivity::class.java))
+
         }
         textview_first.append("\nAPPLICATION_ID:\n${BuildConfig.APPLICATION_ID}")
         textview_first.append("\nBUILD_TYPE:\n${BuildConfig.BUILD_TYPE}")
